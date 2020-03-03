@@ -20,30 +20,35 @@ handler = WebhookHandler(settings.CHANNEL_SECRET)
 
 @csrf_exempt
 def webhook_view(request):
-    signature = request.headers["X-Line-Signature"]
-    body_decode = request.body.decode('utf-8')
     try:
+        signature = request.headers["X-Line-Signature"]
+        body_decode = request.body.decode('utf-8')
         handler.handle(body_decode, signature)
-    except InvalidSignatureError:
-        print("InvalidSignatureError")
-        return HttpResponseBadRequest
+    except:
+        return HttpResponse("OK")
     return HttpResponse("OK")
 
 
 @handler.add(event=MessageEvent, message=TextMessage)
 def handle_message(event: MessageEvent):
-    result = crawl_subscribes_of_youtuber(event.message.text)
-    line_bot_api.reply_message(
-        reply_token=event.reply_token,
-        messages=TextSendMessage(text=result)
-    )
+    try:
+        result = crawl_subscribes_of_youtuber(event.message.text)
+        line_bot_api.reply_message(
+            reply_token=event.reply_token,
+            messages=TextSendMessage(text=result)
+        )
+    except:
+        line_bot_api.reply_message(
+            reply_token=event.reply_token,
+            messages=TextSendMessage(text="QQ")
+        )
 
     # 應聲蟲
-    print("event source: ", event.source)
-    line_bot_api.reply_message(
-        reply_token=event.reply_token,
-        messages=TextSendMessage(text=event.message.text)
-    )
+    # print("event source: ", event.source)
+    # line_bot_api.reply_message(
+    #     reply_token=event.reply_token,
+    #     messages=TextSendMessage(text=event.message.text)
+    # )
 
 
 
