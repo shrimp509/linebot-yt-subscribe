@@ -4,13 +4,12 @@ from django.shortcuts import render
 
 from bs4 import BeautifulSoup
 import requests, time, cloudscraper
-from selenium import webdriver
 
 
 def crawl_subscribes_of_youtuber(name):
     base_url = "https://socialblade.com/youtube/user/" + str(name)
     print(base_url)
-    agent = {"User-Agent": 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
+    agent = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36'}
     r = requests.get(base_url, headers=agent)
     soup = BeautifulSoup(r.text, 'html.parser')
     all = soup.select("div.YouTubeUserTopInfo span")

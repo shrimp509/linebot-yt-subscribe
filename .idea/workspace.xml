@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f42bfe74-91af-4b63-95a2-25e828c988f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/webhook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/webhook/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +51,9 @@
       <screen x="0" y="0" width="1707" height="960" />
     </state>
     <state x="778" y="305" key="com.intellij.ide.util.TipDialog/0.0.1707.960@0.0.1707.960" timestamp="1583208711807" />
-    <state x="943" y="209" width="672" height="678" key="search.everywhere.popup" timestamp="1583122100666">
+    <state x="943" y="209" width="672" height="678" key="search.everywhere.popup" timestamp="1583214463375">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
-    <state x="943" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1707.960@0.0.1707.960" timestamp="1583122100666" />
+    <state x="943" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1707.960@0.0.1707.960" timestamp="1583214463375" />
   </component>
 </project>
