@@ -20,12 +20,13 @@ handler = WebhookHandler(settings.CHANNEL_SECRET)
 
 @csrf_exempt
 def webhook_view(request):
+    signature = request.headers["X-Line-Signature"]
+    body_decode = request.body.decode('utf-8')
+
     try:
-        signature = request.headers["X-Line-Signature"]
-        body_decode = request.body.decode('utf-8')
         handler.handle(body_decode, signature)
-    except:
-        return HttpResponse("OK")
+    except InvalidSignatureError:
+        return HttpResponseBadRequest
     return HttpResponse("OK")
 
 
