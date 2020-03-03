@@ -32,17 +32,17 @@ def webhook_view(request):
 
 @handler.add(event=MessageEvent, message=TextMessage)
 def handle_message(event: MessageEvent):
-    try:
-        result = crawl_subscribes_of_youtuber(event.message.text)
-        line_bot_api.reply_message(
-            reply_token=event.reply_token,
-            messages=TextSendMessage(text=result)
-        )
-    except:
-        line_bot_api.reply_message(
-            reply_token=event.reply_token,
-            messages=TextSendMessage(text="QQ")
-        )
+    result = crawl_subscribes_of_youtuber(event.message.text)
+    line_bot_api.reply_message(
+        reply_token=event.reply_token,
+        messages=TextSendMessage(text=result)
+    )
+
+
+    # line_bot_api.reply_message(
+    #     reply_token=event.reply_token,
+    #     messages=TextSendMessage(text="QQ")
+    # )
 
     # 應聲蟲
     # print("event source: ", event.source)
