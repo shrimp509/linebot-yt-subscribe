@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f42bfe74-91af-4b63-95a2-25e828c988f7" name="Default Changelist" comment="" />
+    <list default="true" id="f42bfe74-91af-4b63-95a2-25e828c988f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/crawler/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YYTItKR4D584VN6xHp8TvXbL6L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -40,10 +46,10 @@
       <screen x="0" y="0" width="1707" height="960" />
     </state>
     <state x="617" y="109" key="SettingsEditor/0.0.1707.960@0.0.1707.960" timestamp="1583118834996" />
-    <state x="778" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1583118453597">
+    <state x="778" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1583208711807">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
-    <state x="778" y="305" key="com.intellij.ide.util.TipDialog/0.0.1707.960@0.0.1707.960" timestamp="1583118453597" />
+    <state x="778" y="305" key="com.intellij.ide.util.TipDialog/0.0.1707.960@0.0.1707.960" timestamp="1583208711807" />
     <state x="943" y="209" width="672" height="678" key="search.everywhere.popup" timestamp="1583122100666">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
