@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-LINE_ACCESS_TOKEN = "Nmpu8/vA97qLpLsQL4Yfy020lUSy/+YOGGdmDySE428dZC5xLzdb4Ew2w82OoYCeJYY+7ne2Ld1wU+I/dABqW3YebOD+EoTZGpbqq348R35Ncjl6bDRJimi+k9zmYGYepAP5gnmsaRXVI5nHNe/LIQdB04t89/1O/w1cDnyilFU="
-CHANNEL_SECRET = "0d1d1e1e9c3d7a1d58c223b9e24ef9c8"
+LINE_ACCESS_TOKEN = "youcanguess"
+CHANNEL_SECRET = "heyhey"
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '-8l)d1j&s$g+sol@zp9ie^@ewp2o@f)b=m@z2r-v!@wb3i_&$5'
+SECRET_KEY = 'guesswhat'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
